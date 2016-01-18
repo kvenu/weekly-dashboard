@@ -2,7 +2,9 @@
 
 stage 'Dev'
 node ('master') {
-	sh 'java --version'
+	sh 'java -version'
 	checkout scm
 	sh "mvn clean install"
 }
+
+#test line
