@@ -6,5 +6,3 @@ node ('master') {
 	checkout scm
 	sh "mvn clean install"
 }
-
-#test line
