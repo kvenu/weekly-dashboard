@@ -8,6 +8,6 @@ node ('master') {
 }
 stage 'Release'
 node ('master') {
- 	mv /var/lib/jenkins/.m2/repository/com/walmart/weekly-dashboard-automation/0.0.2-SNAPSHOT/weekly-dashboard-automation-0.0.2-SNAPSHOT.war /root/repository/
-	ls /root/repository/
+ 	sh 'mv /var/lib/jenkins/.m2/repository/com/walmart/weekly-dashboard-automation/0.0.2-SNAPSHOT/weekly-dashboard-automation-0.0.2-SNAPSHOT.war /root/repository/'
+	sh 'ls /root/repository/'
 		}
